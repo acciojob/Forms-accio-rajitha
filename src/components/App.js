@@ -12,20 +12,20 @@ const App = () => {
         <nav>
           <ul>
             <li>
-              <Link to="/form-link" id="form-link">Form Layout</Link>
+              <Link to="/form" id="form-link">Form Layout</Link>
             </li>
             <li>
-              <Link to="/form-ref-link" id="form-ref-link">Form with useRef</Link>
+              <Link to="/form-ref" id="form-ref-link">Form with useRef</Link>
             </li>
             <li>
-              <Link to="/form-state-link" id="form-state-link">Form with useState</Link>
+              <Link to="/form-state" id="form-state-link">Form with useState</Link>
             </li>
           </ul>
         </nav>
         <Routes>
-          <Route path="/form-link" element={<Form />} />
-          <Route path="/form-ref-link" element={<FormRef />} />
-          <Route path="/form-state-link" element={<FormState />} />
+          <Route path="/form" element={<Form />} />
+          <Route path="/form-ref" element={<FormRef />} />
+          <Route path="/form-state" element={<FormState />} />
         </Routes>
       </div>
     </BrowserRouter>
